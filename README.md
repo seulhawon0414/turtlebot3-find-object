@@ -1,10 +1,19 @@
+
 # TurtleBot3 Find Object
 
 **A TurtleBot3 system that finds an object from a Korean text command and reports its distance and 3D position, using YOLO-World, LiDAR, and box-size ranging.**
 
 한국어 명령("내 물병 어딨지?, 내 가방 어딨어?")으로 TurtleBot3가 물체를 찾아 거리와 3D 위치를 알려 주는 시스템입니다.
 
-<!-- 여기에 데모 영상 -->
+## 데모
+
+### 물체를 찾고 거리와 위치를 출력
+
+https://github.com/user-attachments/assets/32810831-e5bc-4c76-a3b3-6ea0e8a4ea65
+
+
+### 찾지 못하면 위치를 옮겨 다시 탐색
+https://github.com/user-attachments/assets/c4453158-2bc7-42df-a55b-1e7ce9cd15b8
 
 ## 동작 방식
 
@@ -13,7 +22,6 @@
 3. **측정**: 물체를 찾으면 멈추고, LiDAR와 박스 크기로 거리를 구해 로봇 기준 3D 위치(x, y, z)를 계산합니다.
 4. **알림**: 결과를 터미널에 출력하고 `/target_position` 토픽(PointStamped)으로 발행합니다.
 
-![시스템 구조도]()
 
 ## 거리 추정
 
