@@ -1,0 +1,8 @@
+*.pt
+*.pth
+venv/
+__pycache__/
+data*/
+*.jpg
+*.json
+results.csv
