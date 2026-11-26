@@ -5,6 +5,9 @@
 
 한국어 명령("내 물병 어딨지?, 내 가방 어딨어?")으로 TurtleBot3가 물체를 찾아 거리와 3D 위치를 알려 주는 시스템입니다.
 
+<img width="400" alt="turtlebot_image" src="https://github.com/user-attachments/assets/470275c9-e487-4bd0-9358-d6b46b707369" />
+
+
 ## 데모
 
 ### 물체를 찾고 거리와 위치를 출력
