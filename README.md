@@ -23,7 +23,7 @@ https://github.com/user-attachments/assets/c4453158-2bc7-42df-a55b-1e7ce9cd15b8
 1. **명령 인식**: 키워드 규칙으로 먼저 찾고, 해당하지 않으면 Ollama Qwen으로 물체 이름을 판단합니다.
 2. **탐색**: 제자리에서 회전하며 YOLO-World로 물체를 찾습니다. 한 바퀴 돌아도 없으면 조금 이동한 뒤 다시 찾습니다.
 3. **측정**: 물체를 찾으면 멈추고, LiDAR와 박스 크기로 거리를 구해 로봇 기준 3D 위치(x, y, z)를 계산합니다.
-4. **알림**: 결과를 터미널에 출력하고 `/target_position` 토픽(PointStamped)으로 발행합니다.
+4. **알림**: 결과를 터미널에 출력하고, /target_position 토픽으로 3D 위치를 발행합니다.
 
 
 ## 거리 추정
@@ -68,7 +68,7 @@ python3 find_object_demo.py --qwen-model qwen2.5:3b
 - 카메라 내부 파라미터 (FX, FY, CX, CY)
 - 카메라와 LiDAR의 위치 차이
 - LiDAR 높이(LiDAR 평면)
-- 물체별 실제 높이 (박스 크기 거리 계산에 사용)
+- 물체별 실제 높이 (박스 크기로 거리를 구할 때만 필요)
 
 ## 주의
 
